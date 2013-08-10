@@ -1,0 +1,71 @@
+# This is a template of setting file for coding style checker
+
+##
+## global section for general settings:
+##
+[global]
+
+#
+# threads : the count of multi-threads, range (0 ~ 16)
+#
+threads = 8
+
+#
+# includes : the include path when compiling the source
+#            the paths are seperated by ;
+#  
+includes = D:\external\boost_1_46_1;
+           D:\project\empg\ILSSDK\trunk\include;
+		   D:\project\empg\ILSSDK\trunk\local_identity_registration\local_identity_registration\src;
+           D:\project\empg\ILSSDK\trunk\local_identity_registration\3rd-party\json\include;
+           D:\project\empg\ILSSDK\trunk\local_identity_registration\3rd-party\openssl\include;
+           D:\project\empg\ILSSDK\trunk\local_identity_registration\3rd-party\sqlite3\include;
+           D:\project\empg\ILSSDK\trunk\local_identity_registration\3rd-party;
+           C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE;
+           C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\INCLUDE;
+           C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include;
+#
+# source_root : the root directory for source code, all source under this directory will be scan and compiled
+#
+source_root = d:\project\empg\ilssdk\trunk\local_identity_registration\local_identity_registration\src\
+#source_root = d:\temp\test
+
+#
+# database_path : the path for cached database file
+#
+database_path = d:\my_test.db
+
+#
+# output_csv_path : the csv file path for reporting final result
+#
+output_csv_path = d:\result.csv
+
+#
+# ignore_filters: the filter string list seperated by ;
+#                 if file or path contains one filter string, then ignore
+#
+ignore_filters = .svn;_svn;.git;stdafx.cpp;lirservice_i.c;lirservice_h;
+                 LIRService_p.c;release;debug;pch;stdafx.hpp
+
+#
+# ignore_paths : the path list for ignore, seperated by ;
+#                could be absolute path or relative path related to source_root
+#
+ignore_paths = 
+
+#
+# ignore_files : the file list for ignore, seperated by ;
+#                could be absolute path or relative path related to source_root				
+#
+ignore_files = d:\project\empg\ilssdk\trunk\local_identity_registration\local_identity_registration\src\cmpc\lir\service\windows\debug\lirservice-b.hpp;
+               d:\project\empg\ilssdk\trunk\local_identity_registration\local_identity_registration\src\cmpc\lir\key_generation\lib\windows\debug\lirkeygenerationdll-b.hpp
+
+
+##
+## macros section to define all macros used in compiling sources
+##
+[macros]
+CMPC_IMP=
+_WIN32
+CMPC_Status=int
+DCSSTUBIMP=

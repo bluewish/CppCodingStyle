@@ -1,0 +1,88 @@
+[rule_namespace_should_in_low_case]
+description = The namespace should be in low case
+enable = True
+
+[rule_function_declaration_first_capital]
+description = The first character should be capital
+enable = True
+
+[rule_class_decalaration]
+description = The class declaration should be in PascalCase.
+enable = True
+
+[rule_class_decalaration_no_mfc_prefix]
+description = Unless a class is derived from MFC, the MFC prefix 'C' or 'I' should not be used.
+enable = True
+
+[rule_class_decalaration_pascal_case]
+description = The class declaration should be in PascalCase.
+enable = True
+
+[rule_variable_name]
+description = Normal variables should be lower-cased and have no trailing underscores
+enable = True
+
+[rule_class_variable_low_case_and_end_with_]
+description = Data members (also called instance variables or member variables) are lower-case with optional underscores like regular variable names, but always end with a trailing underscore.
+enable = True
+
+[rule_struct_field_should_small]
+description = Data members in structs should be named like regular variables without the trailing underscores that data members in classes have
+enable = True
+
+[rule_enum_declaration_name]
+description = The suffix '_E' or '_S' is also used in the typedef of an enum or struct
+enable = True
+
+[rule_struct_declaration_name]
+description = The suffix '_E' or '_S' is also used in the typedef of an enum or struct
+enable = True
+
+[rule_enum_constant_name]
+description = The constant value should be capital characters with _
+enable = True
+
+[rule_typedef_declaration]
+description = "
+	Type names should be in PascalCase. Classes, structs, typedefs, and enums
+	are all the same. They start with a capital letter and have a capital letter
+	for each new word, with no underscores. Every letter in a word (including
+	abbreviations that are never spelt out) after the first should be in lower case.
+enable = True
+
+[rule_const_variable_declaration]
+description = The constant value should be capital characters with _
+enable = True
+
+[rule_macro_definition]
+description = all upper-case with underscores between words
+enable = True
+
+[rule_file_not_contain_tab]
+description = file should not contains tab characters
+enable = True
+
+[rule_file_general_rules]
+description = file general rules
+enable = True
+
+[rule_function_brace_put_on_seperate_line]
+description = The curly braces are put on separate lines.
+enable = True
+
+[rule_param_declaration_8_space_indent]
+description = There should be 8 space indent for param declaration in seperate line.
+enable = True
+
+[rule_call_no_space_before_after_parentheses]
+description = There should no space before/after parenthese when call function.
+enable = True
+
+[rule_if_1_space_between_if_and_parentheses]
+description = There should no space before/after parenthese when call function.
+enable = True
+
+[rule_1_space_before_after_binary_operator]
+description = There should 1 space before/after binary operator.
+enable = True
+
